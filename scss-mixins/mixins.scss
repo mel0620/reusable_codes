@@ -1,0 +1,46 @@
+@mixin css3-prefix($prop, $value) {
+    -webkit-#{$prop}: #{$value};
+    -moz-#{$prop}: #{$value};
+    -ms-#{$prop}: #{$value};
+    -o-#{$prop}: #{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin transition($transition) {
+    @include css3-prefix(transition, $transition ease-in-out);
+}
+
+@mixin abs-position ($top, $right, $bottom, $left) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin bp($point) {
+
+    @if $point==monitor {
+        @media (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if $point==tablet-lg {
+        @media (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @else if $point==tablet-md {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $point==mobile-lg {
+        @media (max-width: 601px) {
+            @content;
+        }
+    }
+}
