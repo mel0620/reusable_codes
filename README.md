@@ -1,2 +1,3 @@
 # reusable_codes
-This codes are for the future purposes only
+
+This could be used for future projects.
