@@ -6,20 +6,38 @@
         }
     }
 
-    @else if $point==tablet-lg {
-        @media screen and (max-width: 991px) {
+    @else if $point==tab-lg {
+        @media screen and (max-width: $tab-lg) {
             @content;
         }
     }
 
-    @else if $point==tablet-md {
-        @media screen and (max-width: 768px) {
+    @else if $point==tab-md {
+        @media screen and (max-width: $tab-md) {
             @content;
         }
     }
 
-    @else if $point==mobile-lg {
-        @media screen and (max-width: 601px) {
+    @else if $point==mob-lg {
+        @media screen and (max-width: $mob-lg) {
+            @content;
+        }
+    }
+
+    @else if $point==mob-md {
+        @media screen and (max-width: $mob-md) {
+            @content;
+        }
+    }
+
+    @else if $point==mob-sm {
+        @media screen and (max-width: $mob-sm) {
+            @content;
+        }
+    }
+
+    @else if $point==mob-xs {
+        @media screen and (max-width: $mob-xs) {
             @content;
         }
     }

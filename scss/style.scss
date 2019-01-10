@@ -1,2 +1,33 @@
-@import "custom/custom_dir";
-@import "mixins/mixins_dir";
+@import "custom/custom-dir";
+@import "mixins/mixins-dir";
+
+html, body {
+    font-size: 16px;
+}
+
+body {
+    background-color: rgba(#1c1c1c, .8);
+}
+
+.box {
+    padding: 2rem;
+    width: 500px;
+    height: 100px;
+    margin: 1rem auto;
+    border: 5px solid brown;
+    background-color: azure;
+
+    @include bp(mob-lg) {
+        width: 250px;
+        padding: 1rem;
+        background-color: burlywood;
+    }
+}
+
+.box:first-child {
+    box-sizing: content-box;
+}
+
+.box:last-child {
+    box-sizing: border-box;
+}
