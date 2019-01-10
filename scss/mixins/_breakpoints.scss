@@ -1,50 +1,44 @@
-@mixin bp($point) {
+@mixin bp($bp) {
 
-    @if $point==desktop {
+    @if $bp == desktop {
         @media screen and (max-width: $desktop) {
             @content;
         }
     }
 
-    @else if $point==tab-lg {
+    @else if $bp == tab-lg {
         @media screen and (max-width: $tab-lg) {
             @content;
         }
     }
 
-    @else if $point==tab-md {
+    @else if $bp == tab-md {
         @media screen and (max-width: $tab-md) {
             @content;
         }
     }
 
-    @else if $point==mob-lg {
+    @else if $bp == mob-lg {
         @media screen and (max-width: $mob-lg) {
             @content;
         }
     }
 
-    @else if $point==mob-md {
+    @else if $bp == mob-md {
         @media screen and (max-width: $mob-md) {
             @content;
         }
     }
 
-    @else if $point==mob-sm {
+    @else if $bp == mob-sm {
         @media screen and (max-width: $mob-sm) {
             @content;
         }
     }
 
-    @else if $point==mob-xs {
+    @else if $bp == mob-xs {
         @media screen and (max-width: $mob-xs) {
             @content;
         }
     }
 }
-
-/* USAGE
-    @include bp(mob-lg) {
-        //ruleset here
-    }
-*/
