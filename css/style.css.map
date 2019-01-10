@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAAQ,4GAAoG;ACA5G,sBAAuB;EACnB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;;;ACSN,UAAE;EACE,SAAS,EFeV,IAAI;;AEbH,oCAAuC;EAH3C,UAAE;IAIM,SAAS,EAAE,wCAAoI;;;AAGnJ,qCAAuC;EAP3C,UAAE;IAQM,SAAS,EFSd,IAAI;;;;AGnBf,IAAK;EACD,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;;;AAGvB,CAAE;EACE,WAAW,EHdE,wBAAwB;;AEQjC,CAAE;EACE,SAAS,ECM2B,IAAI;;ADJxC,oCAAuC;EAH3C,CAAE;IAIM,SAAS,EAAE,wCAAoI;;;AAGnJ,qCAAuC;EAP3C,CAAE;IAQM,SAAS,ECD6B,IAAI",
-"sources": ["../scss/custom/_variables.scss","../scss/custom/_reboot.scss","../scss/mixins/_fluid-typo.scss","../scss/style.scss"],
+"sources": ["../scss/custom/_variables.scss","../scss/custom/_reboot.scss","../scss/mixins/_fluid-type.scss","../scss/style.scss"],
 "names": [],
 "file": "style.css"
 }
