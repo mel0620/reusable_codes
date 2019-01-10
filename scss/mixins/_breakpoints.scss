@@ -1,7 +1,7 @@
 @mixin bp($point) {
 
     @if $point==desktop {
-        @media screen and (max-width: 1199px) {
+        @media screen and (max-width: $desktop) {
             @content;
         }
     }
@@ -42,3 +42,9 @@
         }
     }
 }
+
+/* USAGE
+    @include bp(mob-lg) {
+        //ruleset here
+    }
+*/
