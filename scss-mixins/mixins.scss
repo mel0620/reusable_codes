@@ -1,50 +1,3 @@
-@mixin css3-prefix($prop, $value) {
-    -webkit-#{$prop}: #{$value};
-    -moz-#{$prop}: #{$value};
-    -ms-#{$prop}: #{$value};
-    -o-#{$prop}: #{$value};
-    #{$prop}: #{$value};
-}
-
-@mixin transition($transition) {
-    @include css3-prefix(transition, $transition ease-in-out);
-}
-
-@mixin abs-position ($top, $right, $bottom, $left) {
-    position: absolute;
-    top: $top;
-    right: $right;
-    bottom: $bottom;
-    left: $left;
-}
-
-@mixin bp($point) {
-
-    @if $point==desktop {
-        @media screen and (max-width: 1199px) {
-            @content;
-        }
-    }
-
-    @else if $point==tablet-lg {
-        @media screen and (max-width: 991px) {
-            @content;
-        }
-    }
-
-    @else if $point==tablet-md {
-        @media screen and (max-width: 768px) {
-            @content;
-        }
-    }
-
-    @else if $point==mobile-lg {
-        @media screen and (max-width: 601px) {
-            @content;
-        }
-    }
-}
-
 @mixin aspect-ratio($width, $height) {
     position: relative;
 
@@ -62,10 +15,4 @@
         right: 0;
         bottom: 0;
     }
-}
-
-@mixin text-shorten {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
